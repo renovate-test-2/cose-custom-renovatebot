@@ -1,0 +1,16 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "enabled": false,
+      "groupName": "everything",
+      "matchManagers": ["npm"],
+      "matchPackagePatterns": ["*"],
+      "separateMajorMinor": false,
+      "extends": ["schedule:monthly"]
+    }
+  ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  }
+}
