@@ -1,15 +1,20 @@
 {
-  "extends": ["config:base", ":disableDependencyDashboard"],
+  "extends": ["config:base"],
   "packageRules": [
     {
       "enabled": false,
-      "groupName": "everything",
+      "groupName": "security",
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["*"],
-      "separateMajorMinor": false
+      "dependencyDashboardApproval": false,
+      "rangeStrategy": "update-lockfile",
+      "separateMajorMinor": false,
+      "commitMessageSuffix": "[SECURITY]",
+      "branchTopic": "{{{datasource}}}-{{{depName}}}-vulnerability",
+      "prCreation": "immediate"
     }
   ],
   "vulnerabilityAlerts": {
-    "enabled": true
+    "labels": ["security"]
   }
 }
