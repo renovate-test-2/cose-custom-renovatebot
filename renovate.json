@@ -6,8 +6,7 @@
       "groupName": "everything",
       "matchManagers": ["npm"],
       "matchPackagePatterns": ["*"],
-      "separateMajorMinor": false,
-      "extends": ["schedule:monthly"]
+      "separateMajorMinor": false
     }
   ],
   "vulnerabilityAlerts": {
