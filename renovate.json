@@ -3,6 +3,7 @@
   "packageRules": [
     {
       "enabled": true,
+      "extends": ["schedule:monthly"],
       "groupName": "security",
       "matchPackagePatterns": ["*"],
       "dependencyDashboardApproval": false,
