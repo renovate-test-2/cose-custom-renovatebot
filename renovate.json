@@ -4,7 +4,7 @@
     {
       "enabled": false,
       "groupName": "everything",
-      "matchManagers": ["yarn"],
+      "matchManagers": ["npm"],
       "matchPackagePatterns": ["*"],
       "separateMajorMinor": false,
       "extends": ["schedule:monthly"]
